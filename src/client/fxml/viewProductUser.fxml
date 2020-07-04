@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #F5ECCE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ViewProductUserController">
+<children>
+    <AnchorPane fx:id="storesTable" layoutY="100.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #546a96;">
+        <children>
+
+            <TableView fx:id="StoreTable" layoutX="200.0" layoutY="40.0" prefHeight="320.0" prefWidth="500.0">
+                <columns>
+                  <TableColumn fx:id="vendorcodeColumn" prefWidth="195.0" text="Артикул товара" />
+                    <TableColumn fx:id="productColumn" prefWidth="154.0" text="Продукт" />
+                  <TableColumn fx:id="brandColumn" prefWidth="150.0" text="Бренд" />
+                </columns>
+            </TableView>
+            <Button fx:id="backButton" layoutX="786.0" layoutY="355.0" mnemonicParsing="false" onAction="#back" prefWidth="100.0" text="Назад">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+        </children></AnchorPane>
+    <Label alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="59.0" prefWidth="162.0" text="OrderMe" textAlignment="CENTER" textFill="#290e6b">
+        <font>
+            <Font name="Lobster" size="40.0" />
+        </font>
+    </Label>
+</children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #F5ECCE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.AdminMenuController">
+    <children>
+        <AnchorPane layoutY="101.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #546a96;">
+            <children>
+                <Text layoutX="227.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню администратора">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                </Text>
+            <Button fx:id="backButton" layoutX="786.0" layoutY="355.0" mnemonicParsing="false" onAction="#back" prefWidth="100.0" text="Выход">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="adminB" layoutX="175.0" layoutY="135.0" mnemonicParsing="false" onAction="#admin" prefWidth="250.0" text="Администраторы">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="userB" layoutX="175.0" layoutY="185.0" mnemonicParsing="false" onAction="#user" prefWidth="250.0" text="Пользователи">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="productsB" layoutX="175.0" layoutY="235.0" mnemonicParsing="false" onAction="#products" prefWidth="250.0" text="Товары">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="brandB" layoutX="475.0" layoutY="135.0" mnemonicParsing="false" onAction="#brand" prefWidth="250.0" text="Продукция и бренды">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="storeB" layoutX="475.0" layoutY="185.0" mnemonicParsing="false" onAction="#store" prefWidth="250.0" text="Склады">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="storehouseB" layoutX="475.0" layoutY="235.0" mnemonicParsing="false" onAction="#storehouse" prefWidth="250.0" text="Учет товаров">
+               <font>
+                  <Font name="Harrington" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            </children></AnchorPane>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="59.0" prefWidth="162.0" text="OrderMe" textAlignment="CENTER" textFill="#290e6b">
+            <font>
+                <Font name="Lobster" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

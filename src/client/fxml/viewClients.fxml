@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #F5ECCE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ViewClientsController">
+    <children>
+        <AnchorPane fx:id="citiesTable" layoutY="100.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #546a96;">
+            <children>
+
+                <TableView fx:id="clientsTable" layoutX="83.0" layoutY="14.0" prefHeight="320.0" prefWidth="697.0">
+                    <columns>
+                  <TableColumn fx:id="nameColumn" prefWidth="112.0" text="Имя" />
+                  <TableColumn fx:id="surnameColumn" prefWidth="148.0" text="Фамилия" />
+                        <TableColumn fx:id="loginColumn" prefWidth="136.0" text="Логин" />
+                  <TableColumn fx:id="emailColumn" prefWidth="163.0" text="Email" />
+                  <TableColumn fx:id="passwordColumn" prefWidth="137.0" text="Пароль" />
+                    </columns>
+                </TableView>
+                <Button fx:id="backButton" layoutX="786.0" layoutY="355.0" mnemonicParsing="false" onAction="#back" prefWidth="100.0" text="Назад">
+                    <font>
+                        <Font name="Harrington" size="16.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Button>
+            <Button fx:id="delB" layoutX="372.0" layoutY="354.0" mnemonicParsing="false" onAction="#del" prefHeight="34.0" prefWidth="156.0" text="Удалить">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            </children></AnchorPane>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="59.0" prefWidth="166.0" text="OrderMe" textAlignment="CENTER" textFill="#290e6b">
+            <font>
+                <Font name="Lobster" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
